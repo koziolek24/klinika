@@ -2,7 +2,6 @@
     <banerPage/>
     <mainView/>
     <footerPage/>
-    <ImageModal/>
 </template>
 
 
@@ -12,7 +11,6 @@ import mainView from "./views/mainView.vue"
 import banerPage from "./views/banerPage.vue"
 import footerPage from "./views/footerPage.vue"
 import 'animate.css';
-import ImageModal from "./views/ImageModal.vue"
 export default {
     name: 'App',
     components:
@@ -20,7 +18,6 @@ export default {
         mainView,
         banerPage,
         footerPage,
-        ImageModal
     }
 
 }

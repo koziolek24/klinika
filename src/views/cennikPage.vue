@@ -30,7 +30,7 @@
                             </tr>
                             <tr>
                                 <td class="cell-border">Twarz & Dekolt & Szyja</td>
-                                <td class="cell-border">PLN 2300</td>
+                                <td class="cell-border">PLN 3500</td>
                             </tr>
                             <tr>
                                 <td class="cell-border">Twarz</td>
@@ -331,7 +331,7 @@
                             </tr>
                             <tr>
                                 <td class="cell-border">Twarz & Szyja & Dekolt</td>
-                                <td class="cell-border">PLN 550</td>
+                                <td class="cell-border">PLN 900</td>
                             </tr>
                         </tbody>
                         <th><img src="../assetsPng/przerywnik2.png"></th>

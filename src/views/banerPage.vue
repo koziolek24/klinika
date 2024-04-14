@@ -28,7 +28,7 @@
     <div v-else>
         <div id="baner">
             <div id="baner-left">
-                <a>GALERIA</a>
+              <router-link to="/galeria">GALERIA</router-link>
                 <a @click.prevent="handleClick('oferta')">OFERTA</a>
                 <a>ZESPÓŁ</a>
             </div>
@@ -94,6 +94,8 @@ export default {
         this.$router.push("/kontakt");
       } else if (value === "klinika ja") {
         this.$router.push("/");
+      } else if (value === "galeria") {
+        this.$router.push("/galeria");
       }else {
         this.selectedOption = this.options.find((option) => option.value === value).text;
       }
@@ -170,6 +172,7 @@ export default {
             justify-content: space-between;
             #dropik{
               width:33%;
+              margin-left: 2%;
             }
             #pusty{
               width:33%;
