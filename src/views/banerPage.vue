@@ -28,22 +28,22 @@
     <div v-else>
         <div id="baner">
             <div id="baner-left">
-              <router-link to="/galeria">GALERIA</router-link>
+                <router-link to="/galeria">GALERIA</router-link>
                 <a @click.prevent="handleClick('oferta')">OFERTA</a>
-                <a>ZESPÓŁ</a>
+                <router-link to="/zespol">ZESPÓŁ</router-link>
             </div>
             <div id="baner-logo" >
-              <router-link to="/">
+                <router-link to="/">
                 <a>KLINIKA MEDYCYNY ESTETYCZNEJ</a>
-              </router-link>
-              <router-link to="/">
+                </router-link>
+                <router-link to="/">
                 <img src="../assetsPng/logonew.png"/>
-              </router-link>
+                </router-link>
             </div>
             <div id="baner-right">
-              <a @click.prevent="handleClick('o nas')">O NAS</a>
-              <router-link to="/cennik">CENNIK</router-link>
-              <router-link to="/kontakt">KONTAKT</router-link>
+                <a @click.prevent="handleClick('o nas')">O NAS</a>
+                <router-link to="/cennik">CENNIK</router-link>
+                <router-link to="/kontakt">KONTAKT</router-link>
             </div>
         </div>
     </div>
@@ -53,24 +53,24 @@
 
 export default {
 
-  data() {
-    return {
-      isOpen: false,
-      options: [
-        { value: "galeria", text: "GALERIA" },
-        { value: "oferta", text: "OFERTA" },
-        { value: "zespol", text: "ZESPÓŁ" },
-        { value: "o nas", text: "O NAS" },
-        { value: "cennik", text: "CENNIK" },
-        { value: "kontakt", text: "KONTAKT" },
-      ],
-    };
-  },
-  computed: {
-    isMobile() {
-      return window.innerWidth <= 1000;
+    data() {
+        return {
+            isOpen: false,
+            options: [
+                { value: "galeria", text: "GALERIA" },
+                { value: "oferta", text: "OFERTA" },
+                { value: "zespol", text: "ZESPÓŁ" },
+                { value: "o nas", text: "O NAS" },
+                { value: "cennik", text: "CENNIK" },
+                { value: "kontakt", text: "KONTAKT" },
+            ],
+        };
     },
-  },
+    computed: {
+        isMobile() {
+            return window.innerWidth <= 1000;
+        },
+    },
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
@@ -96,7 +96,9 @@ export default {
         this.$router.push("/");
       } else if (value === "galeria") {
         this.$router.push("/galeria");
-      }else {
+      } else if (value === "zespol"){
+        this.$router.push("zespol")
+      } else {
         this.selectedOption = this.options.find((option) => option.value === value).text;
       }
       this.isOpen = false;

@@ -205,7 +205,7 @@
                     </p>
                 </div>
                 <div id="entp4" class="flex-container">
-                    <img src="../assetsPng/zdjdokt.png">
+                    <img src="../assetsPng/zdjdokt2.png">
                 </div>
             </div>
             <div id="eprzerywnik4">

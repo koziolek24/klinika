@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import mainPage from '../views/mainPage'
 import contactPage from '../views/contactPage'
 import cennikPage from '../views/cennikPage'
-import galeriaPage from '@/views/galeriaPage.vue'
+import galeriaPage from '../views/galeriaPage.vue'
+import teamPage from '../views/teamPage.vue'
 //import -> ścieżka
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/galeria',
     name: 'galeriaPage',
     component: galeriaPage,
+  },
+  {
+    path: '/zespol',
+    name: 'teamPage',
+    component: teamPage,
   }
 ]
 
